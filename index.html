@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <footer>
-      <div>
-        <img width="100px" src="./img/todo-list-297195_1280.png" alt="" />
-        <h1>TO DO LIST</h1>
-      </div>
-    </footer>
-    <main>
-      <div class="input__div">
-        <input id="input" type="text" />
-        <button id="btn">ADD</button>
-      </div>
-      <div>
-        <ul id="ul">
-          <!-- <li class="li">
-            <input class="clik" type="checkbox" name="tmm" />
-          </li> -->
-        </ul>
-      </div>
-    </main>
-    <script src="./todo.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Todo List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <img src="./img/todo-list-297195_1280.png" alt=""> <br>
+    Todo List</header>
+ 
+    <section class="todo-add">
+      <form class="todo-add">
+        <input type="text" id="todo-input" placeholder="Add New Todo..." autofocus />
+        <button type="submit" id="todo-button">Add</button>
+      </form>
+    </section>
+
+
+    <section class="todos">
+      <ul id="todo-ul"></ul>
+    </section>
+  <script src="./todo.js"></script>
+</body>
+
 </html>
